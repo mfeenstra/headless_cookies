@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 ## Load cookies and download a remote file à la Wget.
+#
 #    We achieve this by using headless Chrome browser and Selenium WebDriver from
 #    the command line.  First, navigate to your site and save your session cookies with
 #    a browser extension as ./cookies.json.  We'll then load those cookies and spoof the
@@ -9,7 +10,7 @@
 require 'selenium-webdriver'
 require 'uri'
 
-# for my example, I get this binary to flash an Alienware BIOS flash
+# for my example, I get this binary to flash an Alienware BIOS
 @url = "https://dl.dell.com/FOLDER10831114M/1/BIOS_IMG.rcv?" \
        "uid=#{File.read('uid.txt')}fn=BIOS_IMG.rcv"
 
